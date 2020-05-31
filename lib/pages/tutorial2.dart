@@ -14,7 +14,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
         child: Container(
           width: double.maxFinite,
           height: MediaQuery.of(context).size.height,
-          color: Color(0xFFFFFFFF),
+          color: Color(0xFFF7921D),
           child: Stack(
             children: <Widget>[
               Container(
@@ -23,8 +23,8 @@ class _TutorialPage2State extends State<TutorialPage2> {
                   top: 40,
                 ),
                 child: Text(
-                  'Oi eu sou a Duda, queremos saber quais são as suas metas financeiras.',
-                  style: TextStyle(fontSize: 25, color: Color(0xFFF79319)),
+                  'Nome, agora precisamos saber um pouco sobre seu perfil.',
+                  style: TextStyle(fontSize: 25, color: Color(0xFFFFFFFF)),
                 ),
               ),
               Positioned(
@@ -37,7 +37,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
                       width: double.maxFinite,
                       height: MediaQuery.of(context).size.height / 1.5,
                       child: Card(
-                        color: Color(0xFFF7921D),
+                        color: Color(0xFFFFFFFF),
                         elevation: 15,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
@@ -52,9 +52,9 @@ class _TutorialPage2State extends State<TutorialPage2> {
                                 height: 130,
                               ),
                               Text(
-                                'Para poder ajudar você a alcançar seus sonhos e metas',
+                                'Você ganhará pontos que poderá trocar por inúmeras vantagens BMG',
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 38),
+                                    color: Color(0xFFF79319), fontSize: 38),
                               )
                             ],
                           ),
@@ -69,7 +69,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
                   right: 1,
                   left: 1,
                   child: Image.asset(
-                    'assets/duda1.png',
+                    'assets/duda3.png',
                     height: 150,
                   )),
               Positioned(
