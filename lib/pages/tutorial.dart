@@ -110,7 +110,7 @@ class _TutorialState extends State<Tutorial> {
                     right: 0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => TutorialPage2()));

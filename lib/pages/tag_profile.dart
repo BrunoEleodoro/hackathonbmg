@@ -7,7 +7,7 @@ class TagProfileScreen extends StatefulWidget {
 }
 
 class _TagProfileScreenState extends State<TagProfileScreen> {
-  var selectedValue = "";
+  var selectedValue = null;
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -29,6 +29,14 @@ class _TagProfileScreenState extends State<TagProfileScreen> {
               height: 150,
             ),
           ),
+        ),
+        Positioned(
+          left: 30,
+          top: 120,
+          child: Container(
+              width: 250,
+              child: Text(
+                  'Ola, voce precisa de XYZ, fdsafdsafdsafdsafdf, fjkdnsa lkf dsa fdkjs afdjsa fkdj sjakfdsja fdks afdsajhf dsahjf dsajh fdsaf')),
         ),
         Positioned(
             right: -30,
@@ -54,9 +62,36 @@ class _TagProfileScreenState extends State<TagProfileScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: <Widget>[
-                    Text(
-                      'Lorem ipsum',
-                      style: TextStyle(fontSize: 25),
+                    Text('Lorem ipsum',
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold)),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    RadioListTile(
+                      value: 'sim',
+                      groupValue: selectedValue,
+                      onChanged: (a) => setState(() => selectedValue = a),
+                      title: Text('Sim'),
+                    ),
+                    RadioListTile(
+                      value: 'nao',
+                      groupValue: selectedValue,
+                      onChanged: (a) => setState(() => selectedValue = a),
+                      title: Text('Nao'),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 150,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Color(0XFFFF5A00),
+                          borderRadius: BorderRadius.all(Radius.circular(15))),
+                      child: Text('Próximo',
+                          style: TextStyle(color: Colors.white, fontSize: 25)),
                     ),
                   ],
                 ),
