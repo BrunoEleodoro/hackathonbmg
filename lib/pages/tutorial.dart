@@ -92,8 +92,7 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   )),
-                                  
-                                  Container(
+                              Container(
                                   width: double.maxFinite,
                                   height: 50,
                                   margin: EdgeInsets.symmetric(horizontal: 16),
@@ -136,8 +135,7 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   )),
-
-                                   Container(
+                              Container(
                                   width: double.maxFinite,
                                   height: 50,
                                   margin: EdgeInsets.symmetric(horizontal: 16),
@@ -180,8 +178,7 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   )),
-
-                                  Container(
+                              Container(
                                   width: double.maxFinite,
                                   height: 50,
                                   margin: EdgeInsets.symmetric(horizontal: 16),
@@ -224,8 +221,7 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   )),
-
-                                  Container(
+                              Container(
                                   width: double.maxFinite,
                                   height: 50,
                                   margin: EdgeInsets.symmetric(horizontal: 16),
@@ -268,8 +264,7 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   )),
-
-                                  Container(
+                              Container(
                                   width: double.maxFinite,
                                   height: 50,
                                   margin: EdgeInsets.symmetric(horizontal: 16),
@@ -312,7 +307,6 @@ class _TutorialState extends State<Tutorial> {
                                       ),
                                     ),
                                   ))
-
                             ],
                           ),
                         ),

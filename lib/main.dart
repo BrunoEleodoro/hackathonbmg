@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:hackathonbmg/pages/inicio.dart';
-import 'package:hackathonbmg/pages/login.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hackathonbmg/pages/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       title: 'Duda',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -36,5 +37,14 @@ class MyApp extends StatelessWidget {
       //   ),
       home: LoginPage(),
     );
+=======
+        title: 'Duda',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.orange,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: HomePageScreen());
+>>>>>>> 62a22cd21fbe132f4537a24bdc61bd80e8c9041f
   }
 }
