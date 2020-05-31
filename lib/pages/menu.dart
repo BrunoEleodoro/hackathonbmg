@@ -56,6 +56,23 @@ class _MenuPageState extends State<MenuPage> {
                 ]),
               ),
 
+              Positioned(
+                right: 5,
+                left: 5,
+                top:180,
+                child: Stack(
+                children: <Widget>[
+                  Container(
+                    width: 400,
+                    alignment: Alignment.center,
+                    child: Image.asset(
+                        'assets/buscarAtivo.png',
+                        height: 180,
+                      )
+                  ),
+                ]),
+              ),
+
 
               /*Positioned(
                 right: 10,
