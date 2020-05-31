@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type2.dart';
+import 'package:hackathonbmg/pages/investor_model.dart';
 
-
-class InvestorType1Screen extends StatefulWidget {
+class InvestorType5Screen extends StatefulWidget {
   @override
-  _InvestorType1ScreenState createState() => _InvestorType1ScreenState();
+  _InvestorType5ScreenState createState() => _InvestorType5ScreenState();
 }
 
-class _InvestorType1ScreenState extends State<InvestorType1Screen> {
+class _InvestorType5ScreenState extends State<InvestorType5Screen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
           top: 120,
           child: Container(
               width: 280,
-              child: Text('Qual sua experiência com investimentos?',
+              child: Text('Qual destas opções representa suas expectativas?',
                   style: TextStyle(
                   fontSize: 25, fontWeight: FontWeight.bold))),
         ),
@@ -74,19 +73,19 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
                       value: '1',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Nunca investi'),
+                      title: Text('Busco investimento de baixo risco que me permita algum ganho acima da inflação.'),
                     ),
                     RadioListTile(
                       value: '2',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa'),
+                      title: Text('Aceito pequenas perdas em busca da possibilidade de ganhos maiores a longo prazo.'),
                     ),
                     RadioListTile(
                       value: '3',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa e variável'),
+                      title: Text('Quero pontecializar meus investimentos, mesmo que exposto a alto risco.'),
                     ),
                     SizedBox(
                       height: 50,
@@ -96,7 +95,7 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => InvestorType2Screen()));
+                                builder: (context) => InvestroModelScreen()));
                       },
                       child: Container(
                       width: 150,

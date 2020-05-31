@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hackathonbmg/pages/investor_type5.dart';
 
-
-class InvestorTypeScreen extends StatefulWidget {
+class InvestorType4Screen extends StatefulWidget {
   @override
-  _InvestorTypeScreenState createState() => _InvestorTypeScreenState();
+  _InvestorType4ScreenState createState() => _InvestorType4ScreenState();
 }
 
-class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
+class _InvestorType4ScreenState extends State<InvestorType4Screen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
           left: 35,
           top: 120,
           child: Container(
-              width: 280,
-              child: Text('Me diga, qual a finalidade de seus investimentos?',
+              width: 270,
+              child: Text('Você possui conhecimento na area financeira?',
                   style: TextStyle(
                   fontSize: 25, fontWeight: FontWeight.bold))),
         ),
@@ -73,24 +73,31 @@ class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
                       value: '1',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Começar a investir meu dinheiro'),
+                      title: Text('Não possuo formação acadêmica ou conhecimento do mercado financeiro'),
                     ),
                     RadioListTile(
                       value: '2',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Ter retornos superiores às aplicações tradicionais'),
+                      title: Text('Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro'),
                     ),
                     RadioListTile(
                       value: '3',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Crescimento do patrimônio'),
+                      title: Text('Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro'),
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 50,
                     ),
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => InvestorType5Screen()));
+                      },
+                      child: Container(
                       width: 150,
                       height: 50,
                       alignment: Alignment.center,
@@ -99,6 +106,7 @@ class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
                           borderRadius: BorderRadius.all(Radius.circular(15))),
                       child: Text('Próximo',
                           style: TextStyle(color: Colors.white, fontSize: 25)),
+                    ),
                     ),
                   ],
                 ),

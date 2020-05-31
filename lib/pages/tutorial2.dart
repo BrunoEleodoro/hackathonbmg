@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type.dart';
+import 'package:hackathonbmg/pages/investor_type1.dart';
 import 'package:hackathonbmg/pages/tag_profile.dart';
-import 'package:hackathonbmg/pages/investor_type.dart';
 
 class TutorialPage2 extends StatefulWidget {
   @override
@@ -22,10 +21,10 @@ class _TutorialPage2State extends State<TutorialPage2> {
               Container(
                 padding: EdgeInsets.all(16),
                 margin: EdgeInsets.only(
-                  top: 40,
+                  top: 100,
                 ),
                 child: Text(
-                  'Nome, agora precisamos saber um pouco sobre seu perfil.',
+                  'Agora precisamos saber um pouco sobre seu perfil.',
                   style: TextStyle(fontSize: 25, color: Color(0xFFFFFFFF)),
                 ),
               ),
@@ -82,7 +81,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => InvestorTypeScreen()));
+                              builder: (context) => InvestorType1Screen()));
                     },
                     child: Container(
                       width: 150,

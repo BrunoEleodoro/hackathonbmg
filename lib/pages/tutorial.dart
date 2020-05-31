@@ -28,9 +28,9 @@ class _TutorialState extends State<Tutorial> {
             child: Stack(
               children: <Widget>[
                 Positioned(
-                    bottom: 0,
-                    right: 0,
-                    left: 0,
+                    bottom: -10,
+                    right: -10,
+                    left: -10,
                     child: Container(
                       width: double.maxFinite,
                       height: 500,

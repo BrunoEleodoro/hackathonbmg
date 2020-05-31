@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type.dart';
+import 'package:hackathonbmg/pages/investor_type1.dart';
 import 'package:hackathonbmg/pages/tutorial2.dart';
 
 class TagProfileScreen extends StatefulWidget {
@@ -89,7 +89,7 @@ class _TagProfileScreenState extends State<TagProfileScreen> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => InvestorTypeScreen()));
+                                builder: (context) => InvestorType1Screen()));
                       },
                       child: Container(
                         width: 150,

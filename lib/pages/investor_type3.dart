@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type2.dart';
+import 'package:hackathonbmg/pages/investor_model.dart';
 
-
-class InvestorType1Screen extends StatefulWidget {
+class InvestorType3Screen extends StatefulWidget {
   @override
-  _InvestorType1ScreenState createState() => _InvestorType1ScreenState();
+  _InvestorType3ScreenState createState() => _InvestorType3ScreenState();
 }
 
-class _InvestorType1ScreenState extends State<InvestorType1Screen> {
+class _InvestorType3ScreenState extends State<InvestorType3Screen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
           top: 120,
           child: Container(
               width: 280,
-              child: Text('Qual sua experiência com investimentos?',
+              child: Text('Como você avalia seu conhecimento sobre investimentos?',
                   style: TextStyle(
                   fontSize: 25, fontWeight: FontWeight.bold))),
         ),
@@ -74,29 +73,29 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
                       value: '1',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Nunca investi'),
+                      title: Text('Razoável'),
                     ),
                     RadioListTile(
                       value: '2',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa'),
+                      title: Text('Bom'),
                     ),
                     RadioListTile(
                       value: '3',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa e variável'),
+                      title: Text('Excelente'),
                     ),
                     SizedBox(
-                      height: 50,
+                      height: 80,
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => InvestorType2Screen()));
+                                builder: (context) => InvestroModelScreen()));
                       },
                       child: Container(
                       width: 150,

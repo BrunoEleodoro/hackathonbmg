@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type2.dart';
+import 'package:hackathonbmg/pages/investor_type3.dart';
 
-
-class InvestorType1Screen extends StatefulWidget {
+class InvestorType2Screen extends StatefulWidget {
   @override
-  _InvestorType1ScreenState createState() => _InvestorType1ScreenState();
+  _InvestorType2ScreenState createState() => _InvestorType2ScreenState();
 }
 
-class _InvestorType1ScreenState extends State<InvestorType1Screen> {
+class _InvestorType2ScreenState extends State<InvestorType2Screen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
           top: 120,
           child: Container(
               width: 280,
-              child: Text('Qual sua experiência com investimentos?',
+              child: Text('Me diga, qual a finalidade de seus investimentos?',
                   style: TextStyle(
                   fontSize: 25, fontWeight: FontWeight.bold))),
         ),
@@ -74,19 +73,19 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
                       value: '1',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Nunca investi'),
+                      title: Text('Começar a investir meu dinheiro'),
                     ),
                     RadioListTile(
                       value: '2',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa'),
+                      title: Text('Ter retornos superiores às aplicações tradicionais'),
                     ),
                     RadioListTile(
                       value: '3',
                       groupValue: selectedValue,
                       onChanged: (a) => setState(() => selectedValue = a),
-                      title: Text('Já tive experiência com renda fixa e variável'),
+                      title: Text('Crescimento do patrimônio'),
                     ),
                     SizedBox(
                       height: 50,
@@ -96,7 +95,7 @@ class _InvestorType1ScreenState extends State<InvestorType1Screen> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => InvestorType2Screen()));
+                                builder: (context) => InvestorType3Screen()));
                       },
                       child: Container(
                       width: 150,
