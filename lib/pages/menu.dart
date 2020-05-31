@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:hackathonbmg/pages/cadastro.dart';
-import 'package:hackathonbmg/pages/inicio.dart';
+import 'package:hackathonbmg/pages/splash.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -117,7 +117,14 @@ class _MenuPageState extends State<MenuPage> {
                             top:10,
                             child: Stack(
                             children: <Widget>[
-                              Container(
+                            GestureDetector(
+                            onTap: () {
+                              Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SplashPage()));
+                            },
+                            child:Container(
                                 width: 170,
                                 height: 170,
                                 alignment: Alignment.topRight,
@@ -155,6 +162,7 @@ class _MenuPageState extends State<MenuPage> {
                                 ),
                               ),
                                 ),
+                              ),
                               ),
                             ]),
                           ), 

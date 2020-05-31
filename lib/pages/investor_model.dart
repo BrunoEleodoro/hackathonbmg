@@ -63,7 +63,9 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
                     SizedBox(
                       height: 30,
                     ),
-                    Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"),
+                    Text("Esse tipo de investidor é aquele que procura por segurança na hora de aplicar seu capital. Não está disposto a lidar com inúmeras variações e quer saber, com precisão, qual é a relação entre rentabilidade e risco.",
+                        style: TextStyle(
+                            fontSize: 18)),
                     SizedBox(
                       height: 30,
                     ),
