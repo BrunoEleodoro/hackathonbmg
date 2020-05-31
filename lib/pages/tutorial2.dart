@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:hackathonbmg/pages/questionario1.dart';
+=======
+import 'package:hackathonbmg/pages/tag_profile.dart';
+import 'package:hackathonbmg/pages/tutorial.dart';
+>>>>>>> 50f13e88dfaf649aad60c738853029ab2302d214
 
 class TutorialPage2 extends StatefulWidget {
   @override
