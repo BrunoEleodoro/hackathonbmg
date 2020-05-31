@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/investor_type.dart';
 import 'package:hackathonbmg/pages/tutorial2.dart';
 
-class TagProfileScreen extends StatefulWidget {
+class InvestorTypeScreen extends StatefulWidget {
   @override
-  _TagProfileScreenState createState() => _TagProfileScreenState();
+  _InvestorTypeScreenState createState() => _InvestorTypeScreenState();
 }
 
-class _TagProfileScreenState extends State<TagProfileScreen> {
+class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {
@@ -84,25 +83,15 @@ class _TagProfileScreenState extends State<TagProfileScreen> {
                     SizedBox(
                       height: 30,
                     ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => InvestorTypeScreen()));
-                      },
-                      child: Container(
-                        width: 150,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            color: Color(0XFFFF5A00),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(15))),
-                        child: Text('Próximo',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 25)),
-                      ),
+                    Container(
+                      width: 150,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Color(0XFFFF5A00),
+                          borderRadius: BorderRadius.all(Radius.circular(15))),
+                      child: Text('Próximo',
+                          style: TextStyle(color: Colors.white, fontSize: 25)),
                     ),
                   ],
                 ),
