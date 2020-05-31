@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hackathonbmg/pages/home.dart';
+import 'package:hackathonbmg/pages/login.dart';
 
 void main() {
   runApp(MyApp());
