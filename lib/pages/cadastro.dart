@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:hackathonbmg/pages/cadastro.dart';
-import 'package:hackathonbmg/pages/inicio.dart';
 
-class LoginPage extends StatefulWidget {
+class CadastroPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _CadastroPageState createState() => _CadastroPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _CadastroPageState extends State<CadastroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,35 +24,6 @@ class _LoginPageState extends State<LoginPage> {
                   top: 10,
                 ),
               ),
-              Positioned(
-                left: 10,
-                top:100,
-                child: Stack(
-                children: <Widget>[
-                  Container(
-                    width: 200,
-                    child:  Text('Entre na sua conta',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(color: Colors.white, fontSize: 40))
-                  ),
-                ]),
-              ),
-
-              Positioned(
-                right: 10,
-                top:70,
-                child: Stack(
-                children: <Widget>[
-                  Container(
-                    width: 200,
-                    alignment: Alignment.topRight,
-                    child: Image.asset(
-                        'assets/login.png',
-                        height: 180,
-                      )
-                  ),
-                ]),
-              ),
 
               
               Positioned(
@@ -64,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: <Widget>[
                     Container(
                       width: double.maxFinite,
-                      height: MediaQuery.of(context).size.height / 1.45,
+                      height: MediaQuery.of(context).size.height / 1.1,
                       child: Card(
                         color: Color(0xFFFFFFFF),
                         elevation: 15,
@@ -77,9 +47,28 @@ class _LoginPageState extends State<LoginPage> {
                       padding: EdgeInsets.all(16),
                       child: Column(
                         children: <Widget>[
+                          Container(
+                            width: 200,
+                            height: 100,
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                                'assets/banco_bmg_logo.png',
+                                height: 180,
+                              )
+                          ),
                           _TextField(
                             label: 'E-mail',
                             hint: 'treinador@bmg.com',
+                            onChanged: (a) {},
+                          ),
+                          _TextField(
+                            label: 'CPF',
+                            hint: '999.999.999-99',
+                            onChanged: (a) {},
+                          ),
+                          _TextField(
+                            label: 'Data de nascimento',
+                            hint: 'mm/dd/yyyy',
                             onChanged: (a) {},
                           ),
                           _TextField(
@@ -87,40 +76,9 @@ class _LoginPageState extends State<LoginPage> {
                             hint: '',
                             onChanged: (a) {},
                           ),
-                          Padding(
-                          padding: EdgeInsets.all(16),
-                          child:
-                          Text('Esqueci minha senha',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(color: Colors.black, fontSize: 14))
-                          ),
-                          GestureDetector(
-                          onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => InicioPage()));
-                          },
-                          child: Column(
-                            children: <Widget>[
-                          Container(
-                            width: 150,
-                            height: 50,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                color: Color(0XFFFF5A00),
-                                borderRadius: BorderRadius.all(Radius.circular(15))),
-                            child: Text('Entrar',
-                                style: TextStyle(color: Colors.white, fontSize: 25)),
-                          ),
-                          ],
-                          ),
-                          ),
-                          Padding(
-                          padding: EdgeInsets.all(30),
-                          child:
-                          Text('Não tem uma conta?',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(color: Colors.black, fontSize: 14))
-                          ),
+                          SizedBox(
+                                height: 10,
+                              ),
                            GestureDetector(
                           onTap: () {
                             Navigator.push(context,
@@ -133,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                             height: 50,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                                color: Color(0XFF5E5652),
+                                color: Color(0XFFFF5A00),
                                 borderRadius: BorderRadius.all(Radius.circular(15))),
                             child: Text('Cadastrar',
                                 style: TextStyle(color: Colors.white, fontSize: 25)),

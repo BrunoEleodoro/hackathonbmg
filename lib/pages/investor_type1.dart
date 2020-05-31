@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class InvestorTypeScreen extends StatefulWidget {
+class InvestorType1Screen extends StatefulWidget {
   @override
-  _InvestorTypeScreenState createState() => _InvestorTypeScreenState();
+  _InvestorType1ScreenState createState() => _InvestorType1ScreenState();
 }
 
-class _InvestorTypeScreenState extends State<InvestorTypeScreen> {
+class _InvestorType1ScreenState extends State<InvestorType1Screen> {
   var selectedValue = null;
   @override
   Widget build(BuildContext context) {

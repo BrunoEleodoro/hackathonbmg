@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/questionario1.dart';
+import 'package:hackathonbmg/pages/investor_type.dart';
 import 'package:hackathonbmg/pages/tag_profile.dart';
-import 'package:hackathonbmg/pages/tutorial.dart';
+import 'package:hackathonbmg/pages/investor_type.dart';
 
 class TutorialPage2 extends StatefulWidget {
   @override
@@ -82,7 +82,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => QuestionarioPage1()));
+                              builder: (context) => InvestorTypeScreen()));
                     },
                     child: Container(
                       width: 150,

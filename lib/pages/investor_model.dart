@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackathonbmg/pages/mimo.dart';
+import 'package:hackathonbmg/pages/menu.dart';
 
 class InvestroModelScreen extends StatefulWidget {
   @override
@@ -84,7 +85,7 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
                 child: GestureDetector(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => MimoScreen()));
+                          MaterialPageRoute(builder: (context) => MenuPage()));
                     },
                     child: Column(
                       children: <Widget>[

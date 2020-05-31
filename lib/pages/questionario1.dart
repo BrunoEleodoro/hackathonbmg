@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackathonbmg/pages/investor_model.dart';
 
 class QuestionarioPage1 extends StatefulWidget {
   @override
@@ -116,7 +117,7 @@ class _QuestionarioPage1State extends State<QuestionarioPage1> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => QuestionarioPage1()));
+                          MaterialPageRoute(builder: (context) => InvestroModelScreen()));
                     },
                     child: Container(
                       width: 150,
