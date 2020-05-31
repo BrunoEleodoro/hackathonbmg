@@ -32,7 +32,7 @@ class _SplashPageState extends State<SplashPage> {
                     alignment: Alignment.center,
                     child: Image.asset(
                         'assets/logo.png',
-                        height: 450,
+                        height: 400,
                       )
                   ),
                 ]),

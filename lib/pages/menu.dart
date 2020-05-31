@@ -33,9 +33,9 @@ class _MenuPageState extends State<MenuPage> {
                 children: <Widget>[
                   Container(
                     width: 200,
-                    child:  Text('Aprenda mais sobre educação de financeira',
+                    child:  Text('Aprenda mais sobre educação financeira',
                         textAlign: TextAlign.left,
-                        style: TextStyle(color: Colors.white, fontSize: 25))
+                        style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold ))
                   ),
                 ]),
               ),
