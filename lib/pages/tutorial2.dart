@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackathonbmg/pages/tag_profile.dart';
 import 'package:hackathonbmg/pages/tutorial.dart';
 
 class TutorialPage2 extends StatefulWidget {
@@ -77,8 +78,10 @@ class _TutorialPage2State extends State<TutorialPage2> {
                   right: 0,
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Tutorial()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TagProfileScreen()));
                     },
                     child: Container(
                       width: 150,
