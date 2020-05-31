@@ -84,14 +84,235 @@ class _TutorialState extends State<Tutorial> {
                                             ),
                                             Checkbox(
                                               value: true,
-                                              activeColor: Colors.green,
+                                              activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
-                                            )
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+                                  
+                                  Container(
+                                  width: double.maxFinite,
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  child: Card(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(5)),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.centerLeft,
+                                            end: Alignment.centerRight,
+                                            colors: [
+                                              Color(0xFFfbbc7f),
+                                              Color(0xFFfca588)
+                                            ]),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text(
+                                              'Fazer cursos e faculdades',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Checkbox(
+                                              value: true,
+                                              activeColor: Color(0XFFFF5A00),
+                                              onChanged: (_) {},
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+
+                                   Container(
+                                  width: double.maxFinite,
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  child: Card(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(5)),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.centerLeft,
+                                            end: Alignment.centerRight,
+                                            colors: [
+                                              Color(0xFFfbbc7f),
+                                              Color(0xFFfca588)
+                                            ]),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text(
+                                              'Pagar minhas dívidas',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Checkbox(
+                                              value: true,
+                                              activeColor: Color(0XFFFF5A00),
+                                              onChanged: (_) {},
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+
+                                  Container(
+                                  width: double.maxFinite,
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  child: Card(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(5)),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.centerLeft,
+                                            end: Alignment.centerRight,
+                                            colors: [
+                                              Color(0xFFfbbc7f),
+                                              Color(0xFFfca588)
+                                            ]),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text(
+                                              'Aprender a investir',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Checkbox(
+                                              value: true,
+                                              activeColor: Color(0XFFFF5A00),
+                                              onChanged: (_) {},
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+
+                                  Container(
+                                  width: double.maxFinite,
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  child: Card(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(5)),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.centerLeft,
+                                            end: Alignment.centerRight,
+                                            colors: [
+                                              Color(0xFFfbbc7f),
+                                              Color(0xFFfca588)
+                                            ]),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text(
+                                              'Renda extra',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Checkbox(
+                                              value: true,
+                                              activeColor: Color(0XFFFF5A00),
+                                              onChanged: (_) {},
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+
+                                  Container(
+                                  width: double.maxFinite,
+                                  height: 50,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  child: Card(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(5)),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.centerLeft,
+                                            end: Alignment.centerRight,
+                                            colors: [
+                                              Color(0xFFfbbc7f),
+                                              Color(0xFFfca588)
+                                            ]),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text(
+                                              'Organizar minhas financias',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Checkbox(
+                                              value: true,
+                                              activeColor: Color(0XFFFF5A00),
+                                              onChanged: (_) {},
+                                            ),
                                           ],
                                         ),
                                       ),
                                     ),
                                   ))
+
                             ],
                           ),
                         ),

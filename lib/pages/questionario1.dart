@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hackathonbmg/pages/questionario1.dart';
 
-class TutorialPage2 extends StatefulWidget {
+class QuestionarioPage1 extends StatefulWidget {
   @override
-  _TutorialPage2State createState() => _TutorialPage2State();
+  _QuestionarioPage1State createState() => _QuestionarioPage1State();
 }
 
-class _TutorialPage2State extends State<TutorialPage2> {
+class _QuestionarioPage1State extends State<QuestionarioPage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,20 +16,67 @@ class _TutorialPage2State extends State<TutorialPage2> {
           color: Color(0xFFF7921D),
           child: Stack(
             children: <Widget>[
+
+              Positioned(
+                  bottom: MediaQuery.of(context).size.height / 2,
+                  right: 1,
+                  left: 230,
+                  child: Image.asset(
+                    'assets/duda3.png',
+                    height: 150,
+                  )),
+
               Container(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(0),
                 margin: EdgeInsets.only(
-                  top: 40,
+                  top: 90,
+                  right: 100,
+                  left: 1,
                 ),
-                child: Text(
-                  'Nome, agora precisamos saber um pouco sobre seu perfil.',
-                  style: TextStyle(fontSize: 25, color: Color(0xFFFFFFFF)),
-                ),
+                child: Positioned(
+                  bottom: MediaQuery.of(context).size.height / 2,
+                  
+                  child: Image.asset(
+                    'assets/balao.png',
+                    height: 190,
+                  )),
               ),
+
+              Container(
+                padding: EdgeInsets.all(0),
+                margin: EdgeInsets.only(
+                  top: 100,
+                  right: 100,
+                  left: 1,
+                ),
+                child: Positioned(
+                  bottom: MediaQuery.of(context).size.height / 2,
+                  
+                  child: Padding(
+                          padding: EdgeInsets.all(21),
+                          child: Column(
+                            children: <Widget>[
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                'Qual forma você gostaria de investir?',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 20),
+                              )
+                            ],
+                          ),
+                        )),
+              ),
+
+              
+  
+               
+                  
               Positioned(
                 left: -10,
                 right: -10,
-                bottom: -10,
+                bottom: -150,
                 child: Stack(
                   children: <Widget>[
                     Container(
@@ -48,13 +94,11 @@ class _TutorialPage2State extends State<TutorialPage2> {
                           padding: EdgeInsets.all(16),
                           child: Column(
                             children: <Widget>[
-                              SizedBox(
-                                height: 130,
-                              ),
+                             
                               Text(
-                                'Você ganhará pontos que poderá trocar por inúmeras vantagens BMG',
+                                'Selecione uma das opções',
                                 style: TextStyle(
-                                    color: Color(0xFFF79319), fontSize: 38),
+                                    color: Colors.black, fontSize: 25),
                               )
                             ],
                           ),
@@ -64,17 +108,11 @@ class _TutorialPage2State extends State<TutorialPage2> {
                   ],
                 ),
               ),
+             
               Positioned(
-                  bottom: MediaQuery.of(context).size.height / 2,
-                  right: 1,
-                  left: 1,
-                  child: Image.asset(
-                    'assets/duda3.png',
-                    height: 150,
-                  )),
-              Positioned(
-                  bottom: 0,
-                  right: 0,
+                  bottom: 10,
+                  right: 20,
+                  left: 20,
                   child: GestureDetector(
                     onTap: () {
                       Navigator.push(context,
@@ -86,8 +124,7 @@ class _TutorialPage2State extends State<TutorialPage2> {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                           color: Color(0XFFFF5A00),
-                          borderRadius:
-                              BorderRadius.only(topLeft: Radius.circular(15))),
+                          ),
                       child: Text('Próximo',
                           style: TextStyle(color: Colors.white, fontSize: 25)),
                     ),
