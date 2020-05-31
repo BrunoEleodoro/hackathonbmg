@@ -27,35 +27,28 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Positioned(
                 left: 10,
-                top:100,
-                child: Stack(
-                children: <Widget>[
+                top: 100,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 200,
-                    child:  Text('Entre na sua conta',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(color: Colors.white, fontSize: 40))
-                  ),
+                      width: 200,
+                      child: Text('Entre na sua conta',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(color: Colors.white, fontSize: 40))),
                 ]),
               ),
-
               Positioned(
                 right: 10,
-                top:70,
-                child: Stack(
-                children: <Widget>[
+                top: 70,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 200,
-                    alignment: Alignment.topRight,
-                    child: Image.asset(
+                      width: 200,
+                      alignment: Alignment.topRight,
+                      child: Image.asset(
                         'assets/login.png',
                         height: 180,
-                      )
-                  ),
+                      )),
                 ]),
               ),
-
-              
               Positioned(
                 left: -10,
                 right: -10,
@@ -74,76 +67,85 @@ class _LoginPageState extends State<LoginPage> {
                               topRight: Radius.circular(36)),
                         ),
                         child: Padding(
-                      padding: EdgeInsets.all(16),
-                      child: Column(
-                        children: <Widget>[
-                          _TextField(
-                            label: 'E-mail',
-                            hint: 'treinador@bmg.com',
-                            onChanged: (a) {},
-                          ),
-                          _TextField(
-                            label: 'Senha',
-                            hint: '',
-                            onChanged: (a) {},
-                          ),
-                          Padding(
                           padding: EdgeInsets.all(16),
-                          child:
-                          Text('Esqueci minha senha',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(color: Colors.black, fontSize: 14))
-                          ),
-                          GestureDetector(
-                          onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => InicioPage()));
-                          },
                           child: Column(
                             children: <Widget>[
-                          Container(
-                            width: 150,
-                            height: 50,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                color: Color(0XFFFF5A00),
-                                borderRadius: BorderRadius.all(Radius.circular(15))),
-                            child: Text('Entrar',
-                                style: TextStyle(color: Colors.white, fontSize: 25)),
+                              _TextField(
+                                label: 'E-mail',
+                                hint: 'treinador@bmg.com',
+                                onChanged: (a) {},
+                              ),
+                              _TextField(
+                                label: 'Senha',
+                                hint: '',
+                                onChanged: (a) {},
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.all(16),
+                                  child: Text('Esqueci minha senha',
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                          color: Colors.black, fontSize: 14))),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => InicioPage()));
+                                },
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      width: 150,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                          color: Color(0XFFFF5A00),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15))),
+                                      child: Text('Entrar',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 25)),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Text('Não tem uma conta?',
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                          color: Colors.black, fontSize: 14))),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              CadastroPage()));
+                                },
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      width: 150,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                          color: Color(0XFF5E5652),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15))),
+                                      child: Text('Cadastrar',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 25)),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
-                          ],
-                          ),
-                          ),
-                          Padding(
-                          padding: EdgeInsets.all(30),
-                          child:
-                          Text('Não tem uma conta?',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(color: Colors.black, fontSize: 14))
-                          ),
-                           GestureDetector(
-                          onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => CadastroPage()));
-                          },
-                          child: Column(
-                            children: <Widget>[
-                          Container(
-                            width: 150,
-                            height: 50,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                color: Color(0XFF5E5652),
-                                borderRadius: BorderRadius.all(Radius.circular(15))),
-                            child: Text('Cadastrar',
-                                style: TextStyle(color: Colors.white, fontSize: 25)),
-                          ),
-                          ],
-                          ),
-                          ),
-                        ],
-                      ),
-                    ),
+                        ),
                       ),
                     ),
                   ],
@@ -208,4 +210,3 @@ class __TextFieldState extends State<_TextField> {
     );
   }
 }
-

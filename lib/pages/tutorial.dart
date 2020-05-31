@@ -7,10 +7,12 @@ class Tutorial extends StatefulWidget {
 }
 
 class _TutorialState extends State<Tutorial> {
+  bool viajar = false;
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
+
     return Scaffold(
         body: Stack(
       children: <Widget>[
@@ -83,9 +85,13 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: viajar,
                                               activeColor: Color(0XFFFF5A00),
-                                              onChanged: (_) {},
+                                              onChanged: (_) {
+                                                setState(() {
+                                                  viajar = _;
+                                                });
+                                              },
                                             ),
                                           ],
                                         ),
@@ -126,7 +132,7 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: false,
                                               activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
                                             ),
@@ -169,7 +175,7 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: false,
                                               activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
                                             ),
@@ -212,7 +218,7 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: false,
                                               activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
                                             ),
@@ -255,7 +261,7 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: false,
                                               activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
                                             ),
@@ -298,7 +304,7 @@ class _TutorialState extends State<Tutorial> {
                                               width: 20,
                                             ),
                                             Checkbox(
-                                              value: true,
+                                              value: false,
                                               activeColor: Color(0XFFFF5A00),
                                               onChanged: (_) {},
                                             ),

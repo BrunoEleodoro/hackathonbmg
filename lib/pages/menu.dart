@@ -25,54 +25,47 @@ class _MenuPageState extends State<MenuPage> {
                   top: 10,
                 ),
               ),
-
               Positioned(
                 left: 20,
-                top:100,
-                child: Stack(
-                children: <Widget>[
+                top: 100,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 200,
-                    child:  Text('Aprenda mais sobre educação financeira',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold ))
-                  ),
+                      width: 200,
+                      child: Text('Aprenda mais sobre educação financeira',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold))),
                 ]),
               ),
-
               Positioned(
                 right: 10,
-                top:70,
-                child: Stack(
-                children: <Widget>[
+                top: 70,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 200,
-                    alignment: Alignment.topRight,
-                    child: Image.asset(
+                      width: 200,
+                      alignment: Alignment.topRight,
+                      child: Image.asset(
                         'assets/menu_logo.png',
                         height: 180,
-                      )
-                  ),
+                      )),
                 ]),
               ),
-
               Positioned(
                 right: 5,
                 left: 5,
-                top:180,
-                child: Stack(
-                children: <Widget>[
+                top: 180,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 400,
-                    alignment: Alignment.center,
-                    child: Image.asset(
+                      width: 400,
+                      alignment: Alignment.center,
+                      child: Image.asset(
                         'assets/buscarAtivo.png',
                         height: 180,
-                      )
-                  ),
+                      )),
                 ]),
               ),
-
 
               /*Positioned(
                 right: 10,
@@ -90,7 +83,6 @@ class _MenuPageState extends State<MenuPage> {
                 ]),
               ),*/
 
-              
               Positioned(
                 left: -10,
                 right: -10,
@@ -109,204 +101,203 @@ class _MenuPageState extends State<MenuPage> {
                               topRight: Radius.circular(36)),
                         ),
                         child: Padding(
-                      padding: EdgeInsets.all(16),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned(
-                            left: 10,
-                            top:10,
-                            child: Stack(
+                          padding: EdgeInsets.all(16),
+                          child: Stack(
                             children: <Widget>[
-                            GestureDetector(
-                            onTap: () {
-                              Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => SplashPage()));
-                            },
-                            child:Container(
-                                width: 170,
-                                height: 170,
-                                alignment: Alignment.topRight,
-                                child: Card(
-                                  color: Color(0xFFFFFFFF),
-                                  elevation: 15,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(36),
-                                        bottomLeft: Radius.circular(36),
-                                        bottomRight: Radius.circular(36),
-                                        topRight: Radius.circular(36)),
+                              Positioned(
+                                left: 10,
+                                top: 10,
+                                child: Stack(children: <Widget>[
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  SplashPage()));
+                                    },
+                                    child: Container(
+                                      width: 170,
+                                      height: 170,
+                                      alignment: Alignment.topRight,
+                                      child: Card(
+                                        color: Color(0xFFFFFFFF),
+                                        elevation: 15,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(36),
+                                              bottomLeft: Radius.circular(36),
+                                              bottomRight: Radius.circular(36),
+                                              topRight: Radius.circular(36)),
+                                        ),
+                                        child: Padding(
+                                          padding: EdgeInsets.all(16),
+                                          child: Column(
+                                            children: <Widget>[
+                                              Container(
+                                                  width: 200,
+                                                  child: Image.asset(
+                                                    'assets/menu_1.png',
+                                                    height: 100,
+                                                  )),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Container(
+                                                  width: 200,
+                                                  child: Text('Poupa pra mim',
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize: 12))),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                  child: Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Column(
-                                  children: <Widget>[
-                                    Container(
-                                      width: 200,
-                                      child: Image.asset(
-                                          'assets/menu_1.png',
-                                          height: 100,
-                                        )
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Container(
-                                      width: 200,
-                                      child:Text('Poupa pra mim',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(color: Colors.black, fontSize: 12))
-                                    ),
-                                  ],
-                                ),
+                                ]),
                               ),
-                                ),
-                              ),
-                              ),
-                            ]),
-                          ), 
-                          Positioned(
-                            right: 10,
-                            top:10,
-                            child: Stack(
-                            children: <Widget>[
-                              Container(
-                                width: 170,
-                                height: 170,
-                                alignment: Alignment.topRight,
-                                child: Card(
-                                  color: Color(0xFFFFFFFF),
-                                  elevation: 15,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(36),
-                                        bottomLeft: Radius.circular(36),
-                                        bottomRight: Radius.circular(36),
-                                        topRight: Radius.circular(36)),
+                              Positioned(
+                                right: 10,
+                                top: 10,
+                                child: Stack(children: <Widget>[
+                                  Container(
+                                    width: 170,
+                                    height: 170,
+                                    alignment: Alignment.topRight,
+                                    child: Card(
+                                      color: Color(0xFFFFFFFF),
+                                      elevation: 15,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(36),
+                                            bottomLeft: Radius.circular(36),
+                                            bottomRight: Radius.circular(36),
+                                            topRight: Radius.circular(36)),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          children: <Widget>[
+                                            Container(
+                                                width: 200,
+                                                child: Image.asset(
+                                                  'assets/menu_2.png',
+                                                  height: 100,
+                                                )),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Container(
+                                                width: 200,
+                                                child: Text('Simuladores',
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 12))),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                  child: Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Column(
-                                  children: <Widget>[
-                                    Container(
-                                      width: 200,
-                                      child: Image.asset(
-                                          'assets/menu_2.png',
-                                          height: 100,
-                                        )
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Container(
-                                      width: 200,
-                                      child:Text('Simuladores',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(color: Colors.black, fontSize: 12))
-                                    ),
-                                  ],
-                                ),
+                                ]),
                               ),
-                                ),
-                              ),
-                            ]),
-                          ),  
-                          Positioned(
-                            left: 10,
-                            top:190,
-                            child: Stack(
-                            children: <Widget>[
-                              Container(
-                                width: 170,
-                                height: 170,
-                                alignment: Alignment.topRight,
-                                child: Card(
-                                  color: Color(0xFFFFFFFF),
-                                  elevation: 15,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(36),
-                                        bottomLeft: Radius.circular(36),
-                                        bottomRight: Radius.circular(36),
-                                        topRight: Radius.circular(36)),
+                              Positioned(
+                                left: 10,
+                                top: 190,
+                                child: Stack(children: <Widget>[
+                                  Container(
+                                    width: 170,
+                                    height: 170,
+                                    alignment: Alignment.topRight,
+                                    child: Card(
+                                      color: Color(0xFFFFFFFF),
+                                      elevation: 15,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(36),
+                                            bottomLeft: Radius.circular(36),
+                                            bottomRight: Radius.circular(36),
+                                            topRight: Radius.circular(36)),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          children: <Widget>[
+                                            Container(
+                                                width: 200,
+                                                child: Image.asset(
+                                                  'assets/menu_3.png',
+                                                  height: 100,
+                                                )),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Container(
+                                                width: 200,
+                                                child: Text('Saiba como poupar',
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 12))),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                  child: Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Column(
-                                  children: <Widget>[
-                                    Container(
-                                      width: 200,
-                                      child: Image.asset(
-                                          'assets/menu_3.png',
-                                          height: 100,
-                                        )
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Container(
-                                      width: 200,
-                                      child:Text('Saiba como poupar',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(color: Colors.black, fontSize: 12))
-                                    ),
-                                  ],
-                                ),
+                                ]),
                               ),
-                                ),
-                              ),
-                            ]),
-                          ), 
-                          Positioned(
-                            right: 10,
-                            top:190,
-                            child: Stack(
-                            children: <Widget>[
-                              Container(
-                                width: 170,
-                                height: 170,
-                                alignment: Alignment.topRight,
-                                child: Card(
-                                  color: Color(0xFFFFFFFF),
-                                  elevation: 15,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(36),
-                                        bottomLeft: Radius.circular(36),
-                                        bottomRight: Radius.circular(36),
-                                        topRight: Radius.circular(36)),
+                              Positioned(
+                                right: 10,
+                                top: 190,
+                                child: Stack(children: <Widget>[
+                                  Container(
+                                    width: 170,
+                                    height: 170,
+                                    alignment: Alignment.topRight,
+                                    child: Card(
+                                      color: Color(0xFFFFFFFF),
+                                      elevation: 15,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(36),
+                                            bottomLeft: Radius.circular(36),
+                                            bottomRight: Radius.circular(36),
+                                            topRight: Radius.circular(36)),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          children: <Widget>[
+                                            Container(
+                                                width: 200,
+                                                child: Image.asset(
+                                                  'assets/menu_4.png',
+                                                  height: 100,
+                                                )),
+                                            SizedBox(
+                                              height: 1,
+                                            ),
+                                            Container(
+                                                width: 200,
+                                                child: Text(
+                                                    'Como lidar com as dívidas?',
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 12))),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                  child: Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Column(
-                                  children: <Widget>[
-                                    Container(
-                                      width: 200,
-                                      child: Image.asset(
-                                          'assets/menu_4.png',
-                                          height: 100,
-                                        )
-                                    ),
-                                    SizedBox(
-                                      height: 1,
-                                    ),
-                                    Container(
-                                      width: 200,
-                                      child:Text('Como lidar com as dívidas?',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(color: Colors.black, fontSize: 12))
-                                    ),
-                                  ],
-                                ),
+                                ]),
                               ),
-                                ),
-                              ),
-                            ]),
-                          ), 
-                        ],
-                      ),
-                    ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ],
@@ -371,4 +362,3 @@ class __TextFieldState extends State<_TextField> {
     );
   }
 }
-

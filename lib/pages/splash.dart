@@ -7,6 +7,14 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pop(context);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -22,22 +30,18 @@ class _SplashPageState extends State<SplashPage> {
                   top: 10,
                 ),
               ),
-
               Positioned(
-                top:180,
-                child: Stack(
-                children: <Widget>[
+                top: 180,
+                child: Stack(children: <Widget>[
                   Container(
-                    width: 400,
-                    alignment: Alignment.center,
-                    child: Image.asset(
+                      width: 400,
+                      alignment: Alignment.center,
+                      child: Image.asset(
                         'assets/logo.png',
                         height: 400,
-                      )
-                  ),
+                      )),
                 ]),
               ),
-
             ],
           ),
         ),

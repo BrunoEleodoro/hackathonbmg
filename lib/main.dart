@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hackathonbmg/pages/login.dart';
+import 'package:hackathonbmg/pages/trilha.dart';
 
 void main() {
   runApp(MyApp());

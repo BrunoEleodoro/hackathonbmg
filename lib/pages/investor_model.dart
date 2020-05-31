@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackathonbmg/pages/index.dart';
 import 'package:hackathonbmg/pages/mimo.dart';
 import 'package:hackathonbmg/pages/menu.dart';
 
@@ -21,7 +22,6 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
           height: height,
           color: Color(0XFFF7921D),
         ),
-       
         Positioned(
           top: 120,
           left: -10,
@@ -32,11 +32,9 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
               height: 50,
               child: Text(
                 'Seu perfil é MODERADO',
-                style: TextStyle(
-                    color: Colors.white, fontSize: 35),
+                style: TextStyle(color: Colors.white, fontSize: 35),
               )),
         ),
-
         Positioned(
           top: 170,
           left: -10,
@@ -63,34 +61,31 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
                     SizedBox(
                       height: 30,
                     ),
-                    Text("Esse tipo de investidor é aquele que procura por segurança na hora de aplicar seu capital. Não está disposto a lidar com inúmeras variações e quer saber, com precisão, qual é a relação entre rentabilidade e risco.",
-                        style: TextStyle(
-                            fontSize: 18)),
+                    Text(
+                        "Esse tipo de investidor é aquele que procura por segurança na hora de aplicar seu capital. Não está disposto a lidar com inúmeras variações e quer saber, com precisão, qual é a relação entre rentabilidade e risco.",
+                        style: TextStyle(fontSize: 18)),
                     SizedBox(
                       height: 30,
                     ),
-                    
                   ],
                 ),
               ),
             ),
           ),
         ),
-        
-
         Positioned(
-          bottom: 10,
-          left: -10,
-          right: -10,
-          child:Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => MenuPage()));
-                    },
-                    child: Column(
-                      children: <Widget>[
+            bottom: 10,
+            left: -10,
+            right: -10,
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => IndexPage()));
+                },
+                child: Column(
+                  children: <Widget>[
                     Container(
                       width: 150,
                       height: 50,
@@ -104,8 +99,7 @@ class _InvestroModelScreenState extends State<InvestroModelScreen> {
                   ],
                 ),
               ),
-          )
-        )
+            ))
       ],
     ));
   }
