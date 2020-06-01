@@ -13,7 +13,7 @@ A  Minha  Treinadora  BMG  é  uma  solução  de  jornada  gamificada  utilizan
 
 <h3>Atualizações</h3>
 <ul>
-	<li>Backend feito NodeJs</li>
+	<li>Backend feito NodeJs, <a href="https://github.com/victorbilisambipar/treinadorBMGBackEnd" target="_blank">Link Repo</a></li>
 	<li>Frontend feito em Flutter, <a href="https://brunoeleodoro.github.io/hackathonbmg/" target="_blank">Link solucao</a></li>
 </ul>
 
