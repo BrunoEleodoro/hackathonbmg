@@ -64,7 +64,7 @@ class _PerfilPageState extends State<PerfilPage> {
                                     height: 100,
                                   )
                               ),
-                              Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                              Text("Sou Ana Maria, tenho 20 anos e procuro por segurança na hora de aplicar seu capital. Não está disposto a lidar com inúmeras variações e quer saber, com precisão, qual é a relação entre rentabilidade e risco.",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(fontSize: 16)),
                             ],

@@ -36,7 +36,7 @@ class _MimoScreenState extends State<MimoScreen> {
                     Container(
                       padding: const EdgeInsets.all(50.0),
                       child: Image.asset(
-                        'assets/perfil.png',
+                        'assets/presente.png',
                         height: 150,
                       ),
                     ),
@@ -48,7 +48,7 @@ class _MimoScreenState extends State<MimoScreen> {
                     ),
                     Container(
                       child: Image.asset(
-                        'assets/perfil.png',
+                        'assets/aceita-laranja.png',
                         height: 120,
                       ),
                     ),
@@ -68,8 +68,7 @@ class _MimoScreenState extends State<MimoScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SucessoScreen()));
+                      Navigator.pop(context);
                     },
                   child: Column(
                   children: <Widget>[

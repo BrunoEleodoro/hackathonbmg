@@ -108,15 +108,7 @@ class _MenuPageState extends State<MenuPage> {
                                 left: 10,
                                 top: 10,
                                 child: Stack(children: <Widget>[
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushReplacement(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  SplashPage()));
-                                    },
-                                    child: Container(
+                                  Container(
                                       width: 170,
                                       height: 170,
                                       alignment: Alignment.topRight,
@@ -156,7 +148,6 @@ class _MenuPageState extends State<MenuPage> {
                                         ),
                                       ),
                                     ),
-                                  ),
                                 ]),
                               ),
                               Positioned(

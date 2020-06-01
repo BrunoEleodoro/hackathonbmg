@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hackathonbmg/pages/login.dart';
+import 'package:hackathonbmg/pages/splash.dart';
 import 'package:hackathonbmg/pages/trilha.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       //     depth: 6,
       //     intensity: 0.5,
       //   ),
-      home: LoginPage(),
+      home: SplashPage(),
     );
   }
 }

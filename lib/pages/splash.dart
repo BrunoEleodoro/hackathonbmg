@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackathonbmg/pages/login.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -10,7 +11,10 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pop(context);
+      Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+          builder: (context) => LoginPage()));
     });
   }
 

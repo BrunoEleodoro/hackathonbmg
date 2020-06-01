@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackathonbmg/pages/perfil.dart';
+import 'package:hackathonbmg/pages/mimo.dart';
 
 class SucessoScreen extends StatefulWidget {
   @override
@@ -77,8 +78,8 @@ class _SucessoScreenState extends State<SucessoScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => PerfilPage()));
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => MimoScreen()));
                     },
                   child: Column(
                   children: <Widget>[
@@ -89,7 +90,7 @@ class _SucessoScreenState extends State<SucessoScreen> {
                       decoration: BoxDecoration(
                           color: Color(0XFFFF5A00),
                           borderRadius: BorderRadius.all(Radius.circular(15))),
-                      child: Text('Obrigado',
+                      child: Text('Próximo',
                           style: TextStyle(color: Colors.white, fontSize: 25)),
                     ),
                   ],
