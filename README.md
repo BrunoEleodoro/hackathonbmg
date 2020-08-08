@@ -1,16 +1,66 @@
-# hackathonbmg
 
-A new Flutter project.
 
-## Getting Started
+--------------------------------------------------------------------
 
-This project is a starting point for a Flutter application.
+<img src="/pages/LogoCheckpoint.png"/>
 
-A few resources to get you started if this is your first Flutter project:
+## 📖 Projeto Checkpoint
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+O Checkpoint é uma solução que centraliza os dados do paciente no Blockchain através de um Smart Contract retirando estes dados das mãos das operadoras para o paciente. No entanto, este compartilhará os dados com as operadoras e profissionais da saúde para que a prestação do serviço seja eficiente e assim a relação é mais justa e dinâmica, evitando também perda e reinserção de dados.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 🚀 Utilização
+
+<h3>Atualizações</h3>
+<ul>
+	<li>Backend feito PHP/MVC</li>
+	<li>Frontend feito PHP/HTML/CSS/JQUERY</li>
+	<li>Gerenciador de pacotes - Composer</li>
+</ul>
+
+## Integrações com apis
+
+<h3>Api da Gr1d</h3>
+<ul>
+	<li>Validação do usuário por meios dos dados informados</li>
+</ul>
+
+<h3>Api da twilio</h3>
+<ul>
+	<li>Validação de Código de seguração do cadastro por sms</li>
+    <li>Envio da receita do paciente em pdf pelo whatsapp</li>
+</ul>
+
+
+## 📖 Documentação
+
+:point_right: A documentação completa estará disponível [AQUI](doc.md).
+
+## ✍ Autores
+
+👤 **Victor Bilis**
+
+* Github: [@victorbilisambipar](https://github.com/victorbilisambipar)
+
+👤 **Paulo Victor**
+
+* Github: [@paulovictorBraw](https://github.com/paulovictorBraw)
+
+👤 **Felipe Candian**
+
+* Github: [@felipecandian]( https://github.com/felipecandian)
+
+👤 **Bruno Eleodoro**
+
+* Github: [@BrunoEleodoro]( https://github.com/BrunoEleodoro)
+
+👤 **Rodrigo Temoteo**
+
+* Github: [@rodrigoatemoteo]( https://github.com/rodrigoatemoteo)
+
+## 📝 Licença
+
+Copyright © 2020 HackBMG<br />
+
+***
+
