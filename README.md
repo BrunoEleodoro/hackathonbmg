@@ -2,39 +2,20 @@
 
 --------------------------------------------------------------------
 
-<img src="/pages/LogoCheckpoint.png"/>
+<img src="/assets/logo.png"/>
 
-## 📖 Projeto Checkpoint
+## 📖 Minha Treinadora BMG 
 
-O Checkpoint é uma solução que centraliza os dados do paciente no Blockchain através de um Smart Contract retirando estes dados das mãos das operadoras para o paciente. No entanto, este compartilhará os dados com as operadoras e profissionais da saúde para que a prestação do serviço seja eficiente e assim a relação é mais justa e dinâmica, evitando também perda e reinserção de dados.
+A  Minha  Treinadora  BMG  é  uma  solução  de  jornada  gamificada  utilizando  a cativante  chatbot  do  meu_BMG,  a Duda,  que  fará  uma  breve  análise  dos objetivos,  do  perfil  e  situação  financeira  atual  do  cliente  e  traçará  uma  trilha com  pequenas   missões  práticas  de  desenvolvimento  na  sua  jornada  de educação  financeira  que  farão  o  usuário  utilizar  os  serviços  e  ferramentas disponibilizadas na conta meu_BMG e que se o usuário seguir com afinco e ir conquistando cada pequena missão ao longo de sua jornada este alcançará o objetivo  informado  no  início,  realizando  assim  seu  grande  sonho,  seja  esse uma viagem para o exterior ou comprar um carro ou apenas organizar sua vida financeira novamente.
 
 
 ## 🚀 Utilização
 
 <h3>Atualizações</h3>
 <ul>
-	<li>Backend feito PHP/MVC</li>
-	<li>Frontend feito PHP/HTML/CSS/JQUERY</li>
-	<li>Gerenciador de pacotes - Composer</li>
+	<li>Backend feito NodeJs, <a href="https://github.com/victorbilisambipar/treinadorBMGBackEnd" target="_blank">Link Repo</a></li>
+	<li>Frontend feito em Flutter, <a href="https://brunoeleodoro.github.io/hackathonbmg/" target="_blank">Link solucao</a></li>
 </ul>
-
-## Integrações com apis
-
-<h3>Api da Gr1d</h3>
-<ul>
-	<li>Validação do usuário por meios dos dados informados</li>
-</ul>
-
-<h3>Api da twilio</h3>
-<ul>
-	<li>Validação de Código de seguração do cadastro por sms</li>
-    <li>Envio da receita do paciente em pdf pelo whatsapp</li>
-</ul>
-
-
-## 📖 Documentação
-
-:point_right: A documentação completa estará disponível [AQUI](doc.md).
 
 ## ✍ Autores
 
